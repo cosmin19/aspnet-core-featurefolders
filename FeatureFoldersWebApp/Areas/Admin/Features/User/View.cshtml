@@ -1,0 +1,14 @@
+﻿@using FeatureFoldersWebApp.Areas.Admin.Features.User.Models
+@model UserModel
+
+@{
+    ViewData["Title"] = "Admin: " + Model.Name;
+}
+
+<div class="container">
+    <h3><strong>User:</strong></h3>
+    <h4><strong>Id:</strong> @Model.Id</h4>
+    <h4><strong>Name:</strong> @Model.Name</h4>
+    <h4><strong>City: </strong>@Model.City</h4>
+    <h4><strong>Age:</strong> @Model.Age</h4>
+</div>

@@ -1,0 +1,29 @@
+﻿@model FeatureFoldersWebApp.Features.Event.Models.EventListModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <h2>Events:</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eventItem in Model.EventList)
+            {
+                <tr>
+                    <td>@eventItem.Id</td>
+                    <td>@eventItem.Name</td>
+                    <td>@eventItem.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

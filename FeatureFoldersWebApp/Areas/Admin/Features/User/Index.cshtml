@@ -1,0 +1,27 @@
+﻿@using FeatureFoldersWebApp.Areas.Admin.Features.User.Models
+@model List<UserModel>
+
+@{
+    ViewData["Title"] = "Admin- Users";
+}
+
+<div class="container">
+    <h2>Users:</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td><a asp-area="Admin" asp-controller="User" asp-action="View" asp-route-userId="@user.Id">@user.Name</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
