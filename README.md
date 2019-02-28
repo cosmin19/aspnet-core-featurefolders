@@ -1,2 +1,2 @@
-# ASP-NETCore-FeatureFolders
-ASP.NET Core - Feature Slices for ASP.NET Core MVC
+# ASP.NET Core - FeatureFolders Implementation
+FeatureFolders implementation from ASP .NET Core MVC
